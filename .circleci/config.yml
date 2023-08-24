@@ -63,7 +63,7 @@ jobs:
       - checkout
       - run:
           name: push
-          command: git push "https://heroku:${HEROKU_API_KEY}@https://git.heroku.com/everuse-be.git"
+          command: git push "https://heroku:${HEROKU_API_KEY}@git.heroku.com/everuse-be.git"
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:

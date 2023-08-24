@@ -15,4 +15,4 @@ any questions you have for the reviewer
 - [ ] test coverage above 90%
 - [ ] RSpec running clean
 - [ ] ran rails s -- features working properly!
-- [ ] pulled/merged milestone branch before submitting PR
+- [ ] pulled/merged main before submitting PR

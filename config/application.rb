@@ -3,6 +3,7 @@ require_relative "boot"
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
+require 'sprockets/railtie'
 require "active_job/railtie"
 require "active_record/railtie"
 require "active_storage/engine"
@@ -23,6 +24,9 @@ module EverUse
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore
+    
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

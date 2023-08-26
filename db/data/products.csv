@@ -1,4 +1,4 @@
-id,name,productType,image,description,color,quantity,size,price,,,,,,,,,,
+id,name,category,image,description,color,quantity,size,price,,,,,,,,,,
 1,Bracelet,Jewelry,https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg,"EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",moss,10,small,20.00,,,,,,,,,,
 2,Bracelet,Jewelry,https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg,"EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",moss,10,medium,20.00,,,,,,,,,,
 3,Bracelet,Jewelry,https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg,"EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",moss,10,large,20.00,,,,,,,,,,

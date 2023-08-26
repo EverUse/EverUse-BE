@@ -39,7 +39,7 @@ gem "bootsnap", require: false
 gem 'faraday'
 gem 'figaro'
 gem 'graphql'
-# gem 'sprockets-rails'
+gem 'sprockets-rails'
 
 
 group :development, :test do

@@ -1,7 +1,6 @@
 module Types
   class MutationType < Types::BaseObject
-    # TODO: remove me
-    field :test_field, String, null: false,
+    field :create_order_form, mutation: Mutation::CreateOrderForm
       description: "An example field added by the generator"
     def test_field
       "Hello World"

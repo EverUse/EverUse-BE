@@ -40,6 +40,7 @@ gem 'faraday'
 gem 'figaro'
 gem 'graphql'
 gem 'sprockets-rails'
+gem 'sendgrid-ruby'
 
 
 group :development, :test do

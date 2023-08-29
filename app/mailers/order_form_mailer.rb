@@ -1,5 +1,5 @@
 class OrderFormMailer < ApplicationMailer
-  default from: 'notifications@everuse.com'
+  default from: 'everusecustomerservice@gmail.com'
 
   def confirmation_email(customer, email, comment, total, products)
     @name = customer

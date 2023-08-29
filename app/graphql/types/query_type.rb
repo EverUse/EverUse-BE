@@ -15,11 +15,11 @@ module Types
     end
 
     field :product, [Types::ProductType], null: false do
-      argument :category, String, required: true
+      argument :name, String, required: true
     end
 
-    def product(category:)
-      Product.where(category: category)
+    def product(name:)
+      Product.where(name: name)
     end
   end
 end

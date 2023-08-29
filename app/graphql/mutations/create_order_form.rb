@@ -4,7 +4,7 @@ module Mutations
     argument :email, String, required: true
     argument :comment, String, required: false
     argument :total, Float, required: true
-    argument :products, String, required: true
+    argument :products, [Types::ProductInputType], required: true
 
     field :message, String, null: false
 

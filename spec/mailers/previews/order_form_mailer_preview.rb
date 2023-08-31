@@ -4,7 +4,7 @@ class OrderFormMailerPreview < ActionMailer::Preview
     customer = "Jimmy Jurado"
     email = "jimmy@example.com"
     comment = "Sample comment"
-    total = 100.50
+    total = 100.59
     products = [{
       name: "bracelet",
       color: "moss",
@@ -16,7 +16,13 @@ class OrderFormMailerPreview < ActionMailer::Preview
       color: "lime",
       size: "onesize",
       quantity: 1
-  }      ]
+  },
+  {
+    name: "leash",
+    color: "orangePlaid",
+    size: "onesize",
+    quantity: 1
+} ]
 
     OrderFormMailer.confirmation_email(customer, email, comment, total, products)
   end

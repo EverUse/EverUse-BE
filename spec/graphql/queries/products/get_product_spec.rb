@@ -10,7 +10,6 @@ module Queries
       end
       it "returns individual product" do
         product_data = query_product
-# require 'pry'; binding.pry
         expect(product_data.count).to eq(2)
         expect(product_data.first[:name]).to eq(@product1.name)
 
@@ -19,7 +18,7 @@ module Queries
 
     private
     def query_product
-      response = gql <<-GQL 
+      response = gql <<-GQL
           query {
             product(name: "bracelet") {
                 id

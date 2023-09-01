@@ -11,7 +11,7 @@ module Mutations
     def resolve(customer:, email:, comment:, total:, products:)
       OrderFormMailer.confirmation_email(customer, email, comment, total, products).deliver_now
 
-      { message: "submission successful"}
+      { message: "Hello #{customer}, your order submission was successful! An order request confirmation will be sent to #{email} shortly. If you don't receive that email please reach out to us at contact@everuseproducts.com"}
     end
   end
 end

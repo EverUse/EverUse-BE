@@ -7,7 +7,7 @@ module Mutations
         response = mutation
         expect(response).to be_a(Hash)
         expect(response[:createOrderForm]).to have_key(:message)
-        expect(response[:createOrderForm][:message]).to eq("submission successful")
+        expect(response[:createOrderForm][:message]).to eq("Hello bill jo, your order submission was successful! An order request confirmation will be sent to billjo@email.com shortly. If you don't receive that email please reach out to us at contact@everuseproducts.com")
       end
     end
 

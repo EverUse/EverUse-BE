@@ -2,10 +2,9 @@ require 'rails_helper'
 
 module Mutations
   RSpec.describe CreateOrderForm, type: :request do
-    describe "reslove" do
+    describe "resolve" do
       it "returns a successful submisson response" do
         response = mutation
-
         expect(response).to be_a(Hash)
         expect(response[:createOrderForm]).to have_key(:message)
         expect(response[:createOrderForm][:message]).to eq("submission successful")

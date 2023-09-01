@@ -41,6 +41,7 @@ gem 'figaro'
 gem 'graphql'
 gem 'sprockets-rails'
 gem 'sendgrid-ruby'
+gem 'newrelic_rpm'
 
 
 group :development, :test do

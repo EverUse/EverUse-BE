@@ -19,7 +19,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     origins "https://everuse-fe-c2ebec288f10.herokuapp.com/",
     
 
-    resource "*",
+    resource "/graphql",
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end

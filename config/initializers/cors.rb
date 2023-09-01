@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "localhost:3000",
+    origins "localhost:3000"
     
 
     resource "/graphql",
@@ -16,7 +16,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins "https://everuse-fe-c2ebec288f10.herokuapp.com/",
+    origins "https://everuse-fe-c2ebec288f10.herokuapp.com/"
     
 
     resource "/graphql",

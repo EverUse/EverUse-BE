@@ -127,7 +127,7 @@ To demo EverUse on your local machine, follow these steps:
 
 <!-- DB Design -->
 # DB Design
-![database design](<CVP BE schema.png>)
+![database design](<everuse_schema.png>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,8 +138,286 @@ To demo EverUse on your local machine, follow these steps:
 <br>
 
     {
-
-      }
+        "data": {
+            "products": [
+                {
+                    "category": "Jewelry",
+                    "color": "moss",
+                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
+                    "id": "65",
+                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
+                    "name": "bracelet",
+                    "price": 15,
+                    "quantity": 10,
+                    "size": "small"
+                },
+                {
+                    "category": "Jewelry",
+                    "color": "moss",
+                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
+                    "id": "66",
+                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
+                    "name": "bracelet",
+                    "price": 15,
+                    "quantity": 10,
+                    "size": "medium"
+                },
+                {
+                    "category": "Jewelry",
+                    "color": "moss",
+                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
+                    "id": "67",
+                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
+                    "name": "bracelet",
+                    "price": 15,
+                    "quantity": 10,
+                    "size": "large"
+                },
+                {
+                    "category": "Jewelry",
+                    "color": "orangePlaid",
+                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
+                    "id": "68",
+                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
+                    "name": "bracelet",
+                    "price": 15,
+                    "quantity": 10,
+                    "size": "small"
+                },
+                {
+                    "category": "Jewelry",
+                    "color": "orangePlaid",
+                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
+                    "id": "69",
+                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
+                    "name": "bracelet",
+                    "price": 15,
+                    "quantity": 10,
+                    "size": "medium"
+                },
+                {
+                    "category": "Jewelry",
+                    "color": "lime",
+                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
+                    "id": "74",
+                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
+                    "name": "bracelet",
+                    "price": 15,
+                    "quantity": 10,
+                    "size": "small"
+                },
+                {
+                    "category": "Jewelry",
+                    "color": "lime",
+                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
+                    "id": "75",
+                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
+                    "name": "bracelet",
+                    "price": 15,
+                    "quantity": 10,
+                    "size": "medium"
+                },
+                {
+                    "category": "Jewelry",
+                    "color": "lime",
+                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
+                    "id": "76",
+                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
+                    "name": "bracelet",
+                    "price": 15,
+                    "quantity": 10,
+                    "size": "large"
+                },
+                {
+                    "category": "Jewelry",
+                    "color": "moss",
+                    "description": "An EverUse keychain showcases love for climbing as well as a movement towards a greener future. Crafted from repurposed climbing rope, each keychain carries the legacy of countless climbs and adventures. Whether you're scaling new heights or exploring everyday paths, clip your keys to something you can trust – just like your climbing gear.",
+                    "id": "77",
+                    "image": "https://live.staticflickr.com/65535/53141442333_7cff3f30a6.jpg",
+                    "name": "keychain",
+                    "price": 10,
+                    "quantity": 10,
+                    "size": "onesize"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "moss",
+                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
+                    "id": "81",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "normal"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "moss",
+                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
+                    "id": "82",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "slim"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "orangePlaid",
+                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
+                    "id": "83",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "normal"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "orangePlaid",
+                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
+                    "id": "84",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "slim"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "bluePlaid",
+                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
+                    "id": "85",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "normal"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "bluePlaid",
+                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
+                    "id": "86",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "slim"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "lime",
+                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
+                    "id": "87",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "normal"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "lime",
+                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
+                    "id": "88",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "slim"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "moss",
+                    "description": "Embrace the versatility of upcycled climbing rope with our handwoven baskets. Each basket is a testament to the craftsmanship of repurposing, transforming retired climbing ropes into functional art. Whether you're organizing gear, storing essentials, or seeking a unique decorative piece, our baskets add character and purpose to any space.",
+                    "id": "89",
+                    "image": "https://live.staticflickr.com/65535/53141442328_c4bd1e96f5.jpg",
+                    "name": "basket",
+                    "price": 30,
+                    "quantity": 10,
+                    "size": "onesize"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "orangePlaid",
+                    "description": "Embrace the versatility of upcycled climbing rope with our handwoven baskets. Each basket is a testament to the craftsmanship of repurposing, transforming retired climbing ropes into functional art. Whether you're organizing gear, storing essentials, or seeking a unique decorative piece, our baskets add character and purpose to any space.",
+                    "id": "90",
+                    "image": "https://live.staticflickr.com/65535/53141442328_c4bd1e96f5.jpg",
+                    "name": "basket",
+                    "price": 30,
+                    "quantity": 10,
+                    "size": "onesize"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "bluePlaid",
+                    "description": "Embrace the versatility of upcycled climbing rope with our handwoven baskets. Each basket is a testament to the craftsmanship of repurposing, transforming retired climbing ropes into functional art. Whether you're organizing gear, storing essentials, or seeking a unique decorative piece, our baskets add character and purpose to any space.",
+                    "id": "91",
+                    "image": "https://live.staticflickr.com/65535/53141442328_c4bd1e96f5.jpg",
+                    "name": "basket",
+                    "price": 30,
+                    "quantity": 10,
+                    "size": "onesize"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "lime",
+                    "description": "Embrace the versatility of upcycled climbing rope with our handwoven baskets. Each basket is a testament to the craftsmanship of repurposing, transforming retired climbing ropes into functional art. Whether you're organizing gear, storing essentials, or seeking a unique decorative piece, our baskets add character and purpose to any space.",
+                    "id": "92",
+                    "image": "https://live.staticflickr.com/65535/53141442328_c4bd1e96f5.jpg",
+                    "name": "basket",
+                    "price": 30,
+                    "quantity": 10,
+                    "size": "onesize"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "moss",
+                    "description": "Give your furry companion the ultimate adventure accessory – an upcycled climbing rope dog leash! Each leash is a blend of durability, style, and environmental responsibility. From city strolls to mountain hikes, it's a leash that stands up to the rigors of outdoor life while supporting your commitment to responsible consumption and conservation.",
+                    "id": "93",
+                    "image": "https://live.staticflickr.com/65535/53141442338_6cc0cceeed.jpg",
+                    "name": "dogLeash",
+                    "price": 30,
+                    "quantity": 10,
+                    "size": "onesize"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "orangePlaid",
+                    "description": "Give your furry companion the ultimate adventure accessory – an upcycled climbing rope dog leash! Each leash is a blend of durability, style, and environmental responsibility. From city strolls to mountain hikes, it's a leash that stands up to the rigors of outdoor life while supporting your commitment to responsible consumption and conservation.",
+                    "id": "94",
+                    "image": "https://live.staticflickr.com/65535/53141442338_6cc0cceeed.jpg",
+                    "name": "dogLeash",
+                    "price": 30,
+                    "quantity": 10,
+                    "size": "onesize"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "bluePlaid",
+                    "description": "Give your furry companion the ultimate adventure accessory – an upcycled climbing rope dog leash! Each leash is a blend of durability, style, and environmental responsibility. From city strolls to mountain hikes, it's a leash that stands up to the rigors of outdoor life while supporting your commitment to responsible consumption and conservation.",
+                    "id": "95",
+                    "image": "https://live.staticflickr.com/65535/53141442338_6cc0cceeed.jpg",
+                    "name": "dogLeash",
+                    "price": 30,
+                    "quantity": 10,
+                    "size": "onesize"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "lime",
+                    "description": "Give your furry companion the ultimate adventure accessory – an upcycled climbing rope dog leash! Each leash is a blend of durability, style, and environmental responsibility. From city strolls to mountain hikes, it's a leash that stands up to the rigors of outdoor life while supporting your commitment to responsible consumption and conservation.",
+                    "id": "96",
+                    "image": "https://live.staticflickr.com/65535/53141442338_6cc0cceeed.jpg",
+                    "name": "dogLeash",
+                    "price": 30,
+                    "quantity": 10,
+                    "size": "onesize"
+                }
+            ]
+        }
+    }
 
 
 </details>
@@ -150,8 +428,99 @@ To demo EverUse on your local machine, follow these steps:
 <br>
 
     {
-
-      }
+        "data": {
+            "product": [
+                {
+                    "category": "Soft Goods",
+                    "color": "moss",
+                    "description": "EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",
+                    "id": "17",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "normal"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "moss",
+                    "description": "EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",
+                    "id": "18",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "slim"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "orangePlaid",
+                    "description": "EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",
+                    "id": "19",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "normal"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "orangePlaid",
+                    "description": "EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",
+                    "id": "20",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "slim"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "bluePlaid",
+                    "description": "EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",
+                    "id": "21",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "normal"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "bluePlaid",
+                    "description": "EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",
+                    "id": "22",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "slim"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "lime",
+                    "description": "EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",
+                    "id": "23",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "normal"
+                },
+                {
+                    "category": "Soft Goods",
+                    "color": "lime",
+                    "description": "EverUse collects and upcycles used climbing rope into high-quality crafts and products. As two fellow rock climbers, we are passionate about both the sport and planet.",
+                    "id": "24",
+                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
+                    "name": "beerKoozie",
+                    "price": 25,
+                    "quantity": 10,
+                    "size": "slim"
+                }
+            ]
+        }
+    }
 
 
 </details>
@@ -162,8 +531,12 @@ To demo EverUse on your local machine, follow these steps:
 <br>
 
     {
-
-      }
+        "data": {
+            "createOrderForm": {
+                "message": "submission successful"
+            }
+        }
+    }
 
 
 </details>

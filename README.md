@@ -62,7 +62,7 @@
 
 Everuse partners with gyms, retailers, and manufacturers throughout the climbing industry to collect and upcycle used climbing rope into high-quality products. We aim to reduce waste, extend the lifespan of climbing rope, and minimize the environmental footprint of the climbing industry. By offering sustainable products, we strive to become the go-to brand for climbers who are passionate about both their sport and the planet. We aim to form partnerships and provide funding to organizations that are dedicated to maintaining access, restoration, and safety in climbing.
 
-The back end application is an API built with the Rails framework and PostgreSQL database. It exposes one endpoint utilizing GraphQL and is responsible for receiving requests, querying the internal database, and formatting JSON responses to send data to the front end application.
+The back end application is an API built with the Rails framework and PostgreSQL database. It exposes one endpoint utilizing GraphQL `/graphql` and is responsible for receiving requests, querying the internal database, and formatting JSON responses to send data to the front end application.
 
 Our Production Site is available [here](https://everuse-fe-c2ebec288f10.herokuapp.com/)
 

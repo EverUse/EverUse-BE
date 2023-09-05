@@ -1,13 +1,13 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
-<img src="" alt="Logo" width="200" height="200" margin="0">
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![CircleCI][circleci-badge]][circleci-badge-url]
+
 
 
 <!-- PROJECT LOGO -->
@@ -60,9 +60,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Everuse is an ecommerce tool which ... *INSERT HERE*
+Everuse partners with gyms, retailers, and manufacturers throughout the climbing industry to collect and upcycle used climbing rope into high-quality products. We aim to reduce waste, extend the lifespan of climbing rope, and minimize the environmental footprint of the climbing industry. By offering sustainable products, we strive to become the go-to brand for climbers who are passionate about both their sport and the planet. We aim to form partnerships and provide funding to organizations that are dedicated to maintaining access, restoration, and safety in climbing.
 
-The back end application is an API built with the Rails framework. It exposes 3 POST endpoints utilizing GraphQL and is responsible for receiving requests, querying the internal database, and formatting JSON responses to send data to the front end application.
+The back end application is an API built with the Rails framework and PostgreSQL database. It exposes 3 POST endpoints utilizing GraphQL and is responsible for receiving requests, querying the internal database, and formatting JSON responses to send data to the front end application.
 
 Our Production Site is available [here](https://everuse-fe-c2ebec288f10.herokuapp.com/)
 
@@ -134,7 +134,7 @@ To demo EverUse on your local machine, follow these steps:
 <!-- Endpoints -->
 ## Endpoints
 <details>
-<summary>POST get all products<code>/graphql'</code></summary>
+<summary>POST get all products<code>/graphql</code></summary>
 <br>
 
     {
@@ -162,248 +162,7 @@ To demo EverUse on your local machine, follow these steps:
                     "quantity": 10,
                     "size": "medium"
                 },
-                {
-                    "category": "Jewelry",
-                    "color": "moss",
-                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
-                    "id": "67",
-                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
-                    "name": "bracelet",
-                    "price": 15,
-                    "quantity": 10,
-                    "size": "large"
-                },
-                {
-                    "category": "Jewelry",
-                    "color": "orangePlaid",
-                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
-                    "id": "68",
-                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
-                    "name": "bracelet",
-                    "price": 15,
-                    "quantity": 10,
-                    "size": "small"
-                },
-                {
-                    "category": "Jewelry",
-                    "color": "orangePlaid",
-                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
-                    "id": "69",
-                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
-                    "name": "bracelet",
-                    "price": 15,
-                    "quantity": 10,
-                    "size": "medium"
-                },
-                {
-                    "category": "Jewelry",
-                    "color": "lime",
-                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
-                    "id": "74",
-                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
-                    "name": "bracelet",
-                    "price": 15,
-                    "quantity": 10,
-                    "size": "small"
-                },
-                {
-                    "category": "Jewelry",
-                    "color": "lime",
-                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
-                    "id": "75",
-                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
-                    "name": "bracelet",
-                    "price": 15,
-                    "quantity": 10,
-                    "size": "medium"
-                },
-                {
-                    "category": "Jewelry",
-                    "color": "lime",
-                    "description": "Elevate your style with a touch of adventure and sustainability. Our upcycled climbing rope bracelets are not just accessories, but a statement of your commitment to the environment. Each bracelet we craft carries a piece of climbing history, woven into a unique design that captures the spirit of exploration. With a blend of colors and patterns, no two bracelets are alike. Please select from our rotating selection of available patterns.",
-                    "id": "76",
-                    "image": "https://live.staticflickr.com/65535/53141436793_15e6a62821.jpg",
-                    "name": "bracelet",
-                    "price": 15,
-                    "quantity": 10,
-                    "size": "large"
-                },
-                {
-                    "category": "Jewelry",
-                    "color": "moss",
-                    "description": "An EverUse keychain showcases love for climbing as well as a movement towards a greener future. Crafted from repurposed climbing rope, each keychain carries the legacy of countless climbs and adventures. Whether you're scaling new heights or exploring everyday paths, clip your keys to something you can trust – just like your climbing gear.",
-                    "id": "77",
-                    "image": "https://live.staticflickr.com/65535/53141442333_7cff3f30a6.jpg",
-                    "name": "keychain",
-                    "price": 10,
-                    "quantity": 10,
-                    "size": "onesize"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "moss",
-                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
-                    "id": "81",
-                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
-                    "name": "beerKoozie",
-                    "price": 25,
-                    "quantity": 10,
-                    "size": "normal"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "moss",
-                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
-                    "id": "82",
-                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
-                    "name": "beerKoozie",
-                    "price": 25,
-                    "quantity": 10,
-                    "size": "slim"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "orangePlaid",
-                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
-                    "id": "83",
-                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
-                    "name": "beerKoozie",
-                    "price": 25,
-                    "quantity": 10,
-                    "size": "normal"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "orangePlaid",
-                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
-                    "id": "84",
-                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
-                    "name": "beerKoozie",
-                    "price": 25,
-                    "quantity": 10,
-                    "size": "slim"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "bluePlaid",
-                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
-                    "id": "85",
-                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
-                    "name": "beerKoozie",
-                    "price": 25,
-                    "quantity": 10,
-                    "size": "normal"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "bluePlaid",
-                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
-                    "id": "86",
-                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
-                    "name": "beerKoozie",
-                    "price": 25,
-                    "quantity": 10,
-                    "size": "slim"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "lime",
-                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
-                    "id": "87",
-                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
-                    "name": "beerKoozie",
-                    "price": 25,
-                    "quantity": 10,
-                    "size": "normal"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "lime",
-                    "description": "Keep your brews cool with our upcycled climbing rope beer koozies. Designed for outdoor enthusiasts who appreciate quality and sustainability, these koozies wrap your beverage in a snug embrace of climbing history.",
-                    "id": "88",
-                    "image": "https://live.staticflickr.com/65535/53141175634_e2fc6ee6ee.jpg",
-                    "name": "beerKoozie",
-                    "price": 25,
-                    "quantity": 10,
-                    "size": "slim"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "moss",
-                    "description": "Embrace the versatility of upcycled climbing rope with our handwoven baskets. Each basket is a testament to the craftsmanship of repurposing, transforming retired climbing ropes into functional art. Whether you're organizing gear, storing essentials, or seeking a unique decorative piece, our baskets add character and purpose to any space.",
-                    "id": "89",
-                    "image": "https://live.staticflickr.com/65535/53141442328_c4bd1e96f5.jpg",
-                    "name": "basket",
-                    "price": 30,
-                    "quantity": 10,
-                    "size": "onesize"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "orangePlaid",
-                    "description": "Embrace the versatility of upcycled climbing rope with our handwoven baskets. Each basket is a testament to the craftsmanship of repurposing, transforming retired climbing ropes into functional art. Whether you're organizing gear, storing essentials, or seeking a unique decorative piece, our baskets add character and purpose to any space.",
-                    "id": "90",
-                    "image": "https://live.staticflickr.com/65535/53141442328_c4bd1e96f5.jpg",
-                    "name": "basket",
-                    "price": 30,
-                    "quantity": 10,
-                    "size": "onesize"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "bluePlaid",
-                    "description": "Embrace the versatility of upcycled climbing rope with our handwoven baskets. Each basket is a testament to the craftsmanship of repurposing, transforming retired climbing ropes into functional art. Whether you're organizing gear, storing essentials, or seeking a unique decorative piece, our baskets add character and purpose to any space.",
-                    "id": "91",
-                    "image": "https://live.staticflickr.com/65535/53141442328_c4bd1e96f5.jpg",
-                    "name": "basket",
-                    "price": 30,
-                    "quantity": 10,
-                    "size": "onesize"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "lime",
-                    "description": "Embrace the versatility of upcycled climbing rope with our handwoven baskets. Each basket is a testament to the craftsmanship of repurposing, transforming retired climbing ropes into functional art. Whether you're organizing gear, storing essentials, or seeking a unique decorative piece, our baskets add character and purpose to any space.",
-                    "id": "92",
-                    "image": "https://live.staticflickr.com/65535/53141442328_c4bd1e96f5.jpg",
-                    "name": "basket",
-                    "price": 30,
-                    "quantity": 10,
-                    "size": "onesize"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "moss",
-                    "description": "Give your furry companion the ultimate adventure accessory – an upcycled climbing rope dog leash! Each leash is a blend of durability, style, and environmental responsibility. From city strolls to mountain hikes, it's a leash that stands up to the rigors of outdoor life while supporting your commitment to responsible consumption and conservation.",
-                    "id": "93",
-                    "image": "https://live.staticflickr.com/65535/53141442338_6cc0cceeed.jpg",
-                    "name": "dogLeash",
-                    "price": 30,
-                    "quantity": 10,
-                    "size": "onesize"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "orangePlaid",
-                    "description": "Give your furry companion the ultimate adventure accessory – an upcycled climbing rope dog leash! Each leash is a blend of durability, style, and environmental responsibility. From city strolls to mountain hikes, it's a leash that stands up to the rigors of outdoor life while supporting your commitment to responsible consumption and conservation.",
-                    "id": "94",
-                    "image": "https://live.staticflickr.com/65535/53141442338_6cc0cceeed.jpg",
-                    "name": "dogLeash",
-                    "price": 30,
-                    "quantity": 10,
-                    "size": "onesize"
-                },
-                {
-                    "category": "Soft Goods",
-                    "color": "bluePlaid",
-                    "description": "Give your furry companion the ultimate adventure accessory – an upcycled climbing rope dog leash! Each leash is a blend of durability, style, and environmental responsibility. From city strolls to mountain hikes, it's a leash that stands up to the rigors of outdoor life while supporting your commitment to responsible consumption and conservation.",
-                    "id": "95",
-                    "image": "https://live.staticflickr.com/65535/53141442338_6cc0cceeed.jpg",
-                    "name": "dogLeash",
-                    "price": 30,
-                    "quantity": 10,
-                    "size": "onesize"
-                },
+                ...
                 {
                     "category": "Soft Goods",
                     "color": "lime",
@@ -424,7 +183,7 @@ To demo EverUse on your local machine, follow these steps:
 <br>
 
 <details>
-<summary>POST get products by attribute <code>/graphql'</code></summary>
+<summary>POST get products by attribute <code>/graphql</code></summary>
 <br>
 
     {
@@ -527,13 +286,13 @@ To demo EverUse on your local machine, follow these steps:
 <br>
 
 <details>
-<summary>POST mutation to send email <code>/graphql'</code></summary>
+<summary>POST mutation to send email <code>/graphql</code></summary>
 <br>
 
     {
         "data": {
             "createOrderForm": {
-                "message": "submission successful"
+                "message": "Hello #{customer}, your order submission was successful! An order request confirmation will be sent to #{email} shortly. If you don't receive that email please reach out to us at contact@everuseproducts.com"
             }
         }
     }
@@ -549,16 +308,21 @@ To demo EverUse on your local machine, follow these steps:
 ## Technical Solutions:
 As part of the Capstone project requirements, the EverUse backend team challenged ourselves to stretch technologies during the 14-day design and development process. We selected the following based on the challenges we anticipated facing while building out our MVP, and adjusted our choices to reflect our individual and team learning goals as well as blockers that came up during the course of working on the project.
 
-### technical solutions
-* Challenge: insert
-* Solution: insert
+### GraphQL
+* Challenge: An ecommerce site can have hundreds if not thousands of inventory items that vary by size, color, and more. And using REST APIs often means numerous API calls to request specific items based on specific conditions, which can result in unnecessary data transfer and decreased efficiency and performance.
+* Solution: With GraphQL the frontend has the flexibility to fetch exactly the data they need from just one endpoint `/graphql`, reducing the number of network requests and improving performance. In total, we have provide three GraphQL operation responses to the frontend -- one query response with all products, one query to response with only products by a given attribute (such as name), and one mutation response to let the user know that an order request email submission was successful.
+
+### SendGrid
+* Challenge: When a user on the frontend submits an order request form, it sends a post mutation query to the backend. The challenge here was to find an API that we could utilize to send emails to the customer to ensure that order details were received and that the company had a way to get in touch with the customer about their order.
+* Solution: Twilio's Sendgrid email API along with ActionMailer allows us to send an email styled with HTML/CSS to the customer with the order details they filled out in their request form.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Roadmap -->
 ## Roadmap
 Additional features, functionality, and potential refactors:
-  * insert here
+  * Future considerations for features include the potential to add an admin portal for the company to log in, manage orders and inventory, and directly fulfill orders.
+  * Additionally, implementing a payment solution that would allow the user to directly pay for the items through the app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -582,24 +346,26 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [Everuse Instagram](https://www.instagram.com/everuseproducts/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/jcjurado3/civic_voice_plus_be.svg?style=for-the-badge
-[contributors-url]: https://github.com/jcjurado3/civic_voice_plus_be/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jcjurado3/civic_voice_plus_be.svg?style=for-the-badge
-[forks-url]: https://github.com/jcjurado3/civic_voice_plus_be/network/members
-[stars-shield]: https://img.shields.io/github/stars/jcjurado3/civic_voice_plus_be.svg?style=for-the-badge
-[stars-url]: https://github.com/jcjurado3/civic_voice_plus_be/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jcjurado3/civic_voice_plus_be.svg?style=for-the-badge
-[issues-url]: https://github.com/jcjurado3/civic_voice_plus_be/issues
-[license-shield]: https://img.shields.io/github/license/jcjurado3/civic_voice_plus_be.svg?style=for-the-badge
-[license-url]: https://github.com/jcjurado3/civic_voice_plus_be/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/EverUse/EverUse-BE.svg?style=for-the-badge
+[contributors-url]: https://github.com/EverUse/EverUse-BE/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/EverUse/EverUse-BE.svg?style=for-the-badge
+[forks-url]: https://github.com/EverUse/EverUse-BE/network/members
+[stars-shield]: https://img.shields.io/github/stars/EverUse/EverUse-BE.svg?style=for-the-badge
+[stars-url]: https://github.com/EverUse/EverUse-BE/stargazers
+[issues-shield]: https://img.shields.io/github/issues/EverUse/EverUse-BE.svg?style=for-the-badge
+[issues-url]: https://github.com/EverUse/EverUse-BE/issues
+[license-shield]: https://img.shields.io/github/license/EverUse/EverUse-BE.svg?style=for-the-badge
+[license-url]: https://github.com/EverUse/EverUse-BE/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+[circleci-badge]: https://circleci.com/gh//EverUse/EverUse-BE.svg?style=shield
+[circleci-badge-url]: https://app.circleci.com/pipelines/github/EverUse
 [ashley-li-url]: https://www.linkedin.com/in/ashley-plasket/
 [jeff-li-url]: https://www.linkedin.com/in/jredish/
 [jimmy-li-url]: https://www.linkedin.com/in/jimmy-jurado-093568131/
@@ -620,8 +386,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [Heroku-url]: https://devcenter.heroku.com/articles/getting-started-with-rails7
 [CircleCI]: https://img.shields.io/badge/circleci-343434?style=for-the-badge&logo=circleci&logoColor=white
 [CircleCI-url]: https://circleci.com/
-[GraphQL]: https://graphql.org/
-[GraphQL-url]: https://img.shields.io/badge/Graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white
-[Twilio-Sendgrid]: https://docs.sendgrid.com/for-developers/sending-email/rubyonrails
-[Sendgrid-url]: https://img.shields.io/badge/twilio%2Fsendgrid-F22F46?style=for-the-badge&logo=twilio&logoColor=white
+[GraphQL]: https://img.shields.io/badge/Graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white
+[GraphQL-url]: https://graphql.org/
+[Twilio-Sendgrid]: https://img.shields.io/badge/twilio%2Fsendgrid-F22F46?style=for-the-badge&logo=twilio&logoColor=white
+[Sendgrid-url]: https://docs.sendgrid.com/for-developers/sending-email/rubyonrails
 

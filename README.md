@@ -83,6 +83,9 @@ Github repositories:
 * [![Circleci][Circleci]][CircleCI-url]
 * [![Graphql][GraphQL]][GraphQL-url]
 * [![Twilio-Sendgrid][Twilio-Sendgrid]][Sendgrid-url]
+* [![Postman][Postman]][Postman-url]
+* [![HTML][HTML]][HTML-url]
+* [![NewRelic][NewRelic]][NewRelic-url]
 
 
 EverUse uses these integrations:
@@ -382,10 +385,16 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [Rails-url]: https://rubyonrails.org/
 [Postgres]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
 [Postgres-url]: https://www.postgresql.org/
+[HTML]: https://img.shields.io/badge/HTML-%23E34F26?style=for-the-badge&logo=html5&logoColor=white
+[HTML-url]: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+[NewRelic]: https://img.shields.io/badge/NewRelic-%231CE783?style=for-the-badge&logo=newrelic&logoColor=white
+[NewRelic-url]: https://docs.newrelic.com/
 [Heroku]: https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white
 [Heroku-url]: https://devcenter.heroku.com/articles/getting-started-with-rails7
 [CircleCI]: https://img.shields.io/badge/circleci-343434?style=for-the-badge&logo=circleci&logoColor=white
 [CircleCI-url]: https://circleci.com/
+[Postman]: https://img.shields.io/badge/Postman-%23FF6C37?style=for-the-badge&logo=postman&logoColor=white
+[Postman-url]: https://learning.postman.com/docs/introduction/overview/
 [GraphQL]: https://img.shields.io/badge/Graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white
 [GraphQL-url]: https://graphql.org/
 [Twilio-Sendgrid]: https://img.shields.io/badge/twilio%2Fsendgrid-F22F46?style=for-the-badge&logo=twilio&logoColor=white

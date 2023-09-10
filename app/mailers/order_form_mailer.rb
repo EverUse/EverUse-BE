@@ -4,7 +4,7 @@ class OrderFormMailer < ApplicationMailer
   def confirmation_email(customer, email, comment, total, products)
     @name = customer
     @products = products
-    @total = total
+    @total = sprintf('%.2f', total)
     @comment = comment
 
     mail(to: email,

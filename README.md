@@ -73,7 +73,10 @@ Github repositories:
 Video Walkthrough of App:
 
 
-https://github.com/EverUse/EverUse-BE/assets/125082037/85de2f44-8d7d-4b6c-b387-3a6176d5facb
+
+https://github.com/EverUse/EverUse-BE/assets/125082037/b58c3fd3-880e-40e5-99d2-054f28845eb3
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -4,7 +4,7 @@ class OrderFormMailerPreview < ActionMailer::Preview
     customer = "Jimmy Jurado"
     email = "jimmy@example.com"
     comment = "Sample comment"
-    total = 100.59
+    total = 100.00
     products = [{
       name: "bracelet",
       color: "moss",

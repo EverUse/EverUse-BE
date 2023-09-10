@@ -70,6 +70,12 @@ Github repositories:
 * Front End: [![Github][Github]][project-fe-gh-url]
 * Back End:  [![Github][Github]][project-be-gh-url]
 
+Video Walkthrough of App:
+
+
+https://github.com/EverUse/EverUse-BE/assets/125082037/85de2f44-8d7d-4b6c-b387-3a6176d5facb
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

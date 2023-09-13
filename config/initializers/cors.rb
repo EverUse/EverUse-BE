@@ -25,7 +25,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins "www.everuseproducts.com"
+    origins "https://www.everuseproducts.com"
 
 
     resource "/graphql",
@@ -34,7 +34,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins "everuseproducts.com"
+    origins "https://everuseproducts.com"
 
 
     resource "/graphql",

@@ -8,7 +8,7 @@ class OrderFormMailer < ApplicationMailer
     @comment = comment
 
     mail(to: email,
-        #  bcc: 'everusecustomerservice@gmail.com',
+        bcc: 'everusecustomerservice@gmail.com',
         subject: 'Order Confirmation')
   end
 end

@@ -21,5 +21,10 @@ module Types
     def product(name:)
       Product.where(name: name)
     end
+
+    field :order_forms, [Types::OrderFormType], null: false
+    def order_forms
+      OrderForm.all
+    end
   end
 end

@@ -18,6 +18,9 @@ common: &default_settings
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
   app_name: 'Everuse_BE_Heroku'
 
+  browser_monitoring.auto_instrument:
+    enabled: true
+
   distributed_tracing:
     enabled: true
 

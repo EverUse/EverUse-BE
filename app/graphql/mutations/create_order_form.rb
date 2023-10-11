@@ -9,6 +9,15 @@ module Mutations
     field :message, String, null: false
 
     def resolve(customer:, email:, comment:, total:, products:)
+      order_form = OrderForm.new(
+        customer: customer,
+        email: email,
+        comment: comment,
+        total: total,
+        products: products.to_json
+      )
+      order_form.save
+
       OrderFormMailer.confirmation_email(customer, email, comment, total, products).deliver_now
 
       { message: "Hello #{customer}, your order submission was successful! An order request confirmation will be sent to #{email} shortly. If you don't receive that email please reach out to us at contact@everuseproducts.com"}

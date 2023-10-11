@@ -1,0 +1,3 @@
+class OrderForm < ApplicationRecord
+
+end

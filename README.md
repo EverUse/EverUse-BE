@@ -383,7 +383,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [jimmy-li-url]: https://www.linkedin.com/in/jimmy-jurado-093568131/
 [alex-li-url]: https://www.linkedin.com/in/alexanderkiselich/
 [Github]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
-[project-fe-gh-url]: https://github.com/EverUse/EverUse-FE
+[project-fe-gh-url]: https://github.com/JamieCaudill/EverUse-FE-Vercel
 [project-be-gh-url]: https://github.com/EverUse/EverUse-BE
 [ashley-gh-url]: https://github.com/aplasket
 [jimmy-gh-url]: https://github.com/jcjurado3

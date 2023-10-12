@@ -42,6 +42,8 @@ gem 'graphql'
 gem 'sprockets-rails'
 gem 'sendgrid-ruby'
 gem 'newrelic_rpm'
+gem 'google-api-client'
+gem 'googleauth'
 
 
 group :development, :test do

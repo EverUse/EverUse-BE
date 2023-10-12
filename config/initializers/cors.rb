@@ -43,7 +43,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins "https://everuse-fe.vercel.app/"
+    origins "https://everuse-fe.vercel.app"
 
 
     resource "/graphql",

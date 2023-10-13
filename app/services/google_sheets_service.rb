@@ -14,6 +14,6 @@ class GoogleSheetsService
     request_body = Google::Apis::SheetsV4::ValueRange.new
     request_body.values = values
 
-    @service.update_spreadsheet_value(spreadsheet_id, range, request_body, value_input_option: 'RAW')
+    @service.append_spreadsheet_value(spreadsheet_id, range, request_body, value_input_option: 'RAW')
   end
 end

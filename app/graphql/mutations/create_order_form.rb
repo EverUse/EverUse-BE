@@ -30,19 +30,21 @@ module Mutations
     def send_data_to_google_sheets(order_form)
       service_account_path = Rails.root.join('app/graphql/mutations/sheets.json')
       service = GoogleSheetsService.new(service_account_path)
-    
+
       products_array = JSON.parse(order_form.products)
       products_string = products_array.map do |product|
         product.map { |key, value| "#{key.capitalize}: #{value}" }.join(", ")
       end.join(" | ")
 
+      format_date = order_form.created_at.strftime("%Y-%m-%d")
+
       values = [
-        [order_form.customer, order_form.email, order_form.comment, order_form.total, products_string]
+        [format_date, order_form.customer, order_form.email, order_form.comment, order_form.total, products_string]
       ]
-    
+
       range = 'Sheet1!A2'
-      spreadsheet_id = '1Ku5iv8SXot9Z6ukHj_ZusdkCBG7tQfl-uNrZnhZwfho'
-    
+      spreadsheet_id = ENV["spreadsheet_key"]
+
       service.update_sheet(spreadsheet_id, range, values)
     end
   end

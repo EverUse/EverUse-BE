@@ -28,8 +28,7 @@ module Mutations
     private
 
     def send_data_to_google_sheets(order_form)
-      service_account_path = Rails.root.join('app/graphql/mutations/sheets.json')
-      service = GoogleSheetsService.new(service_account_path)
+      service = GoogleSheetsService.new
 
       products_array = JSON.parse(order_form.products)
       products_string = products_array.map do |product|

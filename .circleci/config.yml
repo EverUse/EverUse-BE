@@ -15,11 +15,12 @@ orbs:
 # See: https://circleci.com/docs/configuration-reference/#jobs
 
 environment:
-  private_key_id: Figaro.env.google_private_id_key
-  private_key: Figaro.env.google_private_key
-  client_email: Figaro.env.google_client_email
-  client_id: Figaro.env.google_client_id
-  client_x509_cert_url: Figaro.env.google_client_cert_url
+  GOOGLE_PRIVATE_ID_KEY: Figaro.env.google_private_id_key
+  GOOGLE_PRIVATE_KEY: Figaro.env.google_private_key
+  GOOGLE_CLIENT_ID: Figaro.env.google_client_id
+  GOOGLE_CLIENT_EMAIL: Figaro.env.google_client_email
+  GOOGLE_CLIENT_CERT_URL: Figaro.env.google_client_cert_url
+  SPREADSHEET_KEY: Figaro.env.spreadsheet_key
 
 jobs:
   build:
@@ -32,11 +33,6 @@ jobs:
           PGHOST: 127.0.0.1
           PGUSER: postgres
           RAILS_ENV: test
-            private_key_id: Figaro.env.google_private_id_key
-            private_key: Figaro.env.google_private_key
-            client_email: Figaro.env.google_client_email
-            client_id: Figaro.env.google_client_id
-            client_x509_cert_url: Figaro.env.google_client_cert_url
       - image: circleci/postgres:11
         environment: # environment variables for database, it is kind of obvious but it is important that they match with your test config in database.yml
           POSTGRES_USER: postgres

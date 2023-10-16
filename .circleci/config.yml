@@ -14,14 +14,6 @@ orbs:
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/configuration-reference/#jobs
 
-environment:
-  GOOGLE_PRIVATE_ID_KEY: Figaro.env.google_private_id_key
-  GOOGLE_PRIVATE_KEY: Figaro.env.google_private_key
-  GOOGLE_CLIENT_ID: Figaro.env.google_client_id
-  GOOGLE_CLIENT_EMAIL: Figaro.env.google_client_email
-  GOOGLE_CLIENT_CERT_URL: Figaro.env.google_client_cert_url
-  SPREADSHEET_KEY: Figaro.env.spreadsheet_key
-
 jobs:
   build:
     docker:

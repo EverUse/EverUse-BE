@@ -44,6 +44,7 @@ gem 'sendgrid-ruby'
 gem 'newrelic_rpm'
 gem 'google-api-client'
 gem 'googleauth'
+gem 'stringio'
 
 
 group :development, :test do

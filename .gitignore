@@ -30,4 +30,3 @@
 /coverage
 /config/application.yml
 /config/newrelic.yml
-/.circleci/config.yml

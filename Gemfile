@@ -64,3 +64,8 @@ group :development do
   gem 'graphiql-rails'
 end
 
+group :test do
+  gem 'webmock'
+  gem 'vcr'
+end
+

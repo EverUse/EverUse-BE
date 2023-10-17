@@ -74,6 +74,12 @@ Shoulda::Matchers.configure do |config|
     with.test_framework :rspec
     with.library :rails
   end
+  VCR.configure do |config|
+    config.cassette_library_dir = "spec/cassettes"
+    config.hook_into :webmock
+    config.configure_rspec_metadata!
+    config.ignore_localhost = true
+  end
 end
 
 VCR.configure do |config|

@@ -25,7 +25,7 @@ jobs:
           PGHOST: 127.0.0.1
           PGUSER: postgres
           RAILS_ENV: test
-      - image: cimg/postgres:11
+      - image: circleci/postgres:11
         environment: # environment variables for database, it is kind of obvious but it is important that they match with your test config in database.yml
           POSTGRES_USER: postgres
           POSTGRES_DB: EverUse_test

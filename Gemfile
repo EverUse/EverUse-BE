@@ -45,6 +45,7 @@ gem 'newrelic_rpm'
 gem 'google-api-client'
 gem 'googleauth'
 gem 'stringio'
+gem 'base64'
 
 
 group :development, :test do

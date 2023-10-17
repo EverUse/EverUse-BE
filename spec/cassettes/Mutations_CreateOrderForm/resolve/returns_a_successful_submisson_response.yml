@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.googleapis.com/oauth2/v4/token
+    body:
+      encoding: ASCII-8BIT
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJldmVydXNlLXNoZWV0c0BldmVydXNlLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3Y0L3Rva2VuIiwiZXhwIjoxNjk3NTU1NTc3LCJpYXQiOjE2OTc1NTU0NTcsInNjb3BlIjoiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vYXV0aC9zcHJlYWRzaGVldHMifQ.SnMx3mb8kKakc0U4r-GfuN4H7iTWkaTbywKenIIbF1TDh93ukdSOGwRWJzr3vEwqHf3Q0FquxjTrPKkHl9sUm8DhLz_3doTAFXyza42tvgJ09P64Vhn4IMS4Im1o4dsfELaqbZcp4ivr8Sa79IoViLXTvc0WX3SzZL2JIINoHlb3vWcJ_15BnSecRq-1nqaBYFa-71HMfpSYX31hzsJYQUZGrJQqA8A3JhAc4d62OMQEEiv70vOlW9GGJJKNVr3YheoJ5ytW4wi1V_yNFBhZkrDRJkCtEuSvKFKKJoiUje6FMDvYeVhxYVCCdE8MpHW8FDLOC1nAYXsvhYaBnW_-ew
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 17 Oct 2023 15:11:58 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"ya29.c.c0AY_VpZjFMbYQq5ko4-zAFlXyvSEEBzs-aLDjbTpFR5z5Kgp61uxIKD-5xaIKWww5WRpW36g6fv6_73qFuS4L2vl63jH_C1bVcLUFOmFkICjReBilOWbfqF7EhAzDUxD0Kr_-rPqyYJbXCGXdwcM-AndzSdlWFMIClRISuFaOw0sp9M1LsRX-RJyzlq4KdMN7j8y4BjepWxmNMu2Nt3_MWjG9Awv6USNf6rHRDdGnBATsWyyzENwKiwQoQV3QyUAtuQAJPYiM6cooBPfZRscTzhqUwJ4Itiq_eeGDzKtidhv6VsIlMa_N_7o0MkuRyzex9GV_RQHDsUG_nY4vAxGVx-ri-s01xM2W5bxEScbJJCOR8WrobktvIMFfE385KBsJl8xyRXhOigme64J23SVgVBh76-hB4-Wv6XolxYl2ogMB_tX40-9u-Yjj3azhQRjhgiUxOFXwnrW8IIZgkajvJnqY9aw2oFpn4dUkBYF170SYVSgJYI5-ypohlea5vjV9qWezvg_MQmdlt3OgZtibnw_ZnjMtdXWR4ejS7FQFc5q1gF1O9XuX-7xOQJ2SvMMr23sr8X4Y_mMdvldnqBJbw-j24RiltcI1vlJWk47VrmvBa-sxU3muJttjMe16rRt9kfzYesmOlw-gxQX5-mzU2W9iJ-gOwxVJrZxhSvMm4p-72pBzW3Iv42VsJ2RFtaj_nbRnrkkZFrB2Ran2zXonR04W_8Vvz5p2OVzBvFkj-34aohoob5czWM0I56woYjR4UJ1cYYfc403ak9xmJ9WjJfUOXupvacMQbdq8p6hIz17kdYtovRv9pgiF9yMnWvo6JmIiQk_j_d57YUpOqBMutahjpfgmwpsZVJdwa4R1YgZORlu-V1R_6cfc307lIQSmrU-3fnnc2VOI8jcxqXn4dMvIdi3bjS0UhbjRBVpR5g59_OJiMl25F1__MR2ZIh50lqxm8o9xc9Qx5d5mb1yygUk52jUtao9qafcue4uVRowv6lk3qO8aYYg","expires_in":3599,"token_type":"Bearer"}'
+  recorded_at: Tue, 17 Oct 2023 15:11:58 GMT
+- request:
+    method: post
+    uri: https://sheets.googleapis.com/v4/spreadsheets/1Ku5iv8SXot9Z6ukHj_ZusdkCBG7tQfl-uNrZnhZwfho/values/Sheet1!A2:append?valueInputOption=RAW
+    body:
+      encoding: UTF-8
+      string: '{"values":[["2023-10-17","bill jo","billjo@email.com","hi please work",130.9,"Name:
+        bracelet, Size: small, Color: moss, Quantity: 2"]]}'
+    headers:
+      User-Agent:
+      - unknown/0.0.0 google-api-ruby-client/0.11.1 Mac OS X/13.2.1 (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 17 Oct 2023 15:11:58 GMT
+      X-Goog-Api-Client:
+      - gl-ruby/3.2.2 gdcl/1.11.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer ya29.c.c0AY_VpZjFMbYQq5ko4-zAFlXyvSEEBzs-aLDjbTpFR5z5Kgp61uxIKD-5xaIKWww5WRpW36g6fv6_73qFuS4L2vl63jH_C1bVcLUFOmFkICjReBilOWbfqF7EhAzDUxD0Kr_-rPqyYJbXCGXdwcM-AndzSdlWFMIClRISuFaOw0sp9M1LsRX-RJyzlq4KdMN7j8y4BjepWxmNMu2Nt3_MWjG9Awv6USNf6rHRDdGnBATsWyyzENwKiwQoQV3QyUAtuQAJPYiM6cooBPfZRscTzhqUwJ4Itiq_eeGDzKtidhv6VsIlMa_N_7o0MkuRyzex9GV_RQHDsUG_nY4vAxGVx-ri-s01xM2W5bxEScbJJCOR8WrobktvIMFfE385KBsJl8xyRXhOigme64J23SVgVBh76-hB4-Wv6XolxYl2ogMB_tX40-9u-Yjj3azhQRjhgiUxOFXwnrW8IIZgkajvJnqY9aw2oFpn4dUkBYF170SYVSgJYI5-ypohlea5vjV9qWezvg_MQmdlt3OgZtibnw_ZnjMtdXWR4ejS7FQFc5q1gF1O9XuX-7xOQJ2SvMMr23sr8X4Y_mMdvldnqBJbw-j24RiltcI1vlJWk47VrmvBa-sxU3muJttjMe16rRt9kfzYesmOlw-gxQX5-mzU2W9iJ-gOwxVJrZxhSvMm4p-72pBzW3Iv42VsJ2RFtaj_nbRnrkkZFrB2Ran2zXonR04W_8Vvz5p2OVzBvFkj-34aohoob5czWM0I56woYjR4UJ1cYYfc403ak9xmJ9WjJfUOXupvacMQbdq8p6hIz17kdYtovRv9pgiF9yMnWvo6JmIiQk_j_d57YUpOqBMutahjpfgmwpsZVJdwa4R1YgZORlu-V1R_6cfc307lIQSmrU-3fnnc2VOI8jcxqXn4dMvIdi3bjS0UhbjRBVpR5g59_OJiMl25F1__MR2ZIh50lqxm8o9xc9Qx5d5mb1yygUk52jUtao9qafcue4uVRowv6lk3qO8aYYg
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Content-Encoding:
+      - gzip
+      Date:
+      - Tue, 17 Oct 2023 15:11:58 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      X-L2-Request-Path:
+      - l2-managed-6
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "spreadsheetId": "1Ku5iv8SXot9Z6ukHj_ZusdkCBG7tQfl-uNrZnhZwfho",
+          "tableRange": "Sheet1!A1:F19",
+          "updates": {
+            "spreadsheetId": "1Ku5iv8SXot9Z6ukHj_ZusdkCBG7tQfl-uNrZnhZwfho",
+            "updatedRange": "Sheet1!A20:F20",
+            "updatedRows": 1,
+            "updatedColumns": 6,
+            "updatedCells": 6
+          }
+        }
+  recorded_at: Tue, 17 Oct 2023 15:11:58 GMT
+recorded_with: VCR 6.2.0

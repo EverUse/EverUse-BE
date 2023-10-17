@@ -65,6 +65,8 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
   config.include FactoryBot::Syntax::Methods
+
+  config.include Capybara::DSL
 end
 
 Shoulda::Matchers.configure do |config|
@@ -72,4 +74,19 @@ Shoulda::Matchers.configure do |config|
     with.test_framework :rspec
     with.library :rails
   end
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+  config.ignore_localhost = true
+  config.filter_sensitive_data('google_private_id_key') { ENV['google_private_id_key'] } # add these for all sensitive data
+  config.filter_sensitive_data('google_private_key') { ENV['google_private_key'] } # add these for all sensitive data
+  config.filter_sensitive_data('google_client_id') { ENV['google_client_id'] } # add these for all sensitive data
+  config.filter_sensitive_data('google_client_email') { ENV['google_client_email'] } # add these for all sensitive data
+  config.filter_sensitive_data('google_client_cert_url') { ENV['google_client_cert_url'] } # add these for all sensitive data
+  config.filter_sensitive_data('spreadsheet_key') { ENV['spreadsheet_key'] } # add these for all sensitive data
+  config.configure_rspec_metadata! #allows you to use shortcut :vcr
+  config.default_cassette_options = { :allow_playback_repeats => true }
+  config.default_cassette_options = { re_record_interval: 7.days}
 end

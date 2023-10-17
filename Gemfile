@@ -42,6 +42,10 @@ gem 'graphql'
 gem 'sprockets-rails'
 gem 'sendgrid-ruby'
 gem 'newrelic_rpm'
+gem 'google-api-client'
+gem 'googleauth'
+gem 'stringio'
+gem 'base64'
 
 
 group :development, :test do
@@ -59,5 +63,11 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   gem 'graphiql-rails'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
+  gem 'capybara'
 end
 

@@ -30,4 +30,4 @@
 /coverage
 /config/application.yml
 /config/newrelic.yml
-/spec/cassettes
+/spec/fixtures

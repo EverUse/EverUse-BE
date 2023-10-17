@@ -26,14 +26,14 @@ class GoogleSheetsService
     @credentials ||= {
         type: "service_account",
         project_id: "everuse",
-        private_key_id: Figaro.env.google_private_id_key,
-        private_key: Figaro.env.google_private_key,
-        client_email: Figaro.env.google_client_email,
-        client_id: Figaro.env.google_client_id,
+        private_key_id: ENV["google_private_id_key"] || Figaro.env.google_private_id_key,
+        private_key: ENV["google_private_key"] || Figaro.env.google_private_key,
+        client_email: ENV["google_client_email"] || Figaro.env.google_client_email,
+        client_id: ENV["google_client_id"] || Figaro.env.google_client_id,
         auth_uri: "https://accounts.google.com/o/oauth2/auth",
         token_uri: "https://oauth2.googleapis.com/token",
         auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
-        client_x509_cert_url: Figaro.env.google_client_cert_url,
+        client_x509_cert_url: ENV["google_client_cert_url"] || Figaro.env.google_client_cert_url,
         universe_domain: "googleapis.com"
       }.to_json
   end

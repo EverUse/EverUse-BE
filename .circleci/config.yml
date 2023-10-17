@@ -56,7 +56,7 @@ jobs:
       - run:
           name: Decode ENV
           command: |
-            echo 'export private_google_key="$(echo $private_google_key | base64 -d)"' >> $BASH_ENV
+            echo "Decoded google_private_key: $(echo -n ${google_private_key} | base64 -d)"
       - run:
           name: Run rspec in parallel
           command: bundle exec rspec

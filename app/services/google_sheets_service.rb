@@ -3,12 +3,14 @@ require 'googleauth'
 
 class GoogleSheetsService
   def initialize
-    @service = Google::Apis::SheetsV4::SheetsService.new
-
-    @service.authorization = Google::Auth::ServiceAccountCredentials.make_creds(
+    auth_credentials = Google::Auth::ServiceAccountCredentials.make_creds(
       json_key_io: StringIO.new(credentials),
       scope: 'https://www.googleapis.com/auth/spreadsheets'
     )
+
+    @service = Google::Apis::SheetsV4::SheetsService.new
+
+    @service.authorization = auth_credentials
   end
 
   def update_sheet(spreadsheet_id, range, values)

@@ -54,6 +54,10 @@ jobs:
           name: Database setup
           command: bin/rails db:{create,migrate} --trace
       - run:
+          name: Decode ENV
+          command: |
+            echo 'export private_google_key="$(echo $private_google_key | base64 -d)"' >> $BASH_ENV
+      - run:
           name: Run rspec in parallel
           command: bundle exec rspec
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/

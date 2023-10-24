@@ -1,5 +1,5 @@
 class OrderFormMailer < ApplicationMailer
-  default from: 'everusecustomerservice@gmail.com'
+  default from: 'contact@everuseproducts.com'
 
   def confirmation_email(customer, email, comment, total, products)
     @name = customer
@@ -8,7 +8,7 @@ class OrderFormMailer < ApplicationMailer
     @comment = comment
 
     mail(to: email,
-        # bcc: 'everusecustomerservice@gmail.com',
+        bcc: 'contact@everuseproducts.com',
         subject: 'Order Confirmation')
   end
 end

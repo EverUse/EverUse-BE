@@ -22,7 +22,8 @@ RSpec.describe OrderFormMailer, type: :mailer do
     end
 
     it 'renders the sender email' do
-      expect(@mail.from).to eq(['contact@everuseproducts.com'])
+      # expect(@mail.from).to eq(['contact@everuseproducts.com'])
+      expect(@mail.from).to eq(['everusecustomerservice@gmail.com'])
     end
   end
 end

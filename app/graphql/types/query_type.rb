@@ -4,7 +4,7 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
-  
+
     field :products, [Types::ProductType], null: false,
       description: "Returns all products"
     def products

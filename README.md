@@ -64,7 +64,7 @@ Everuse partners with gyms, retailers, and manufacturers throughout the climbing
 
 The back end application is an API built with the Rails framework and PostgreSQL database. It exposes one endpoint utilizing GraphQL `/graphql` and is responsible for receiving requests, querying the internal database, and formatting JSON responses to send data to the front end application.
 
-Our Production Site is available [here](https://everuse-fe.vercel.app/)
+Website is available [here](https://everuse-fe.vercel.app/)
 
 Github repositories:
 * Front End: [![Github][Github]][project-fe-gh-url]
